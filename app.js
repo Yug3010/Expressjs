@@ -1,6 +1,18 @@
 let express=require('express');
 let app=express();
 let port=3000;
+let path=require('path');
+
+//using static folder for static files
+app.use('/static',express.static('static'));
+
+
+
+//setting template engine pug
+
+app.set('view engine','pug');
+app.set('views',path.join('views'));
+
 
 app.get("/",(req,res)=>{
     res.send('This is home page');

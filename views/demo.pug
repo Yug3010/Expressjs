@@ -1,0 +1,78 @@
+//- just convert html file to pug using online html to pug converter.
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0 maximum-scale=1')
+  title Food delivery website
+  link(rel='stylesheet' media='screen and (max-width:1078px)' href='phone.css')
+  link(rel='stylesheet' href='../static/demo.css')
+nav#nav
+  #logo
+    img(src='../static/photo.jpeg' alt='backup' height='40px')
+  ul.fe
+    li
+      a(href='#home') Home
+    li
+      a(href='#services') Services
+    li
+      a(href='#client') About us
+    li
+      a(href='/contact') Contact us
+section#home
+  h1.pri Welcome to myOnlineMeal
+  p
+    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at adipisci amet aspernatur dolorem tempora modi qui ipsa optio laboriosam.
+  p
+    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at adipisci amet aspernatur dolorem .
+  button.but Order now
+section#services
+  h1.sed Our Services
+  #service
+    .boxex
+      img(src='../static/pizza.jpg' alt='o' height='100px')
+      h2#le Food ordering
+      p#pa
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet incidunt ipsa vero reiciendis at soluta accusamus! Ad reprehenderit laudantium a.
+    .boxex
+      img(src='../static/bulkfood.jpg' alt='o' height='100px')
+      h2#le Food catering
+      p#pa
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet incidunt ipsa vero reiciendis at soluta accusamus! Ad reprehenderit laudantium a.
+    .boxex
+      img(src='../static/fooddel.png' alt='o' height='100px')
+      h2#le Bulk ordering
+      p#pa
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet incidunt ipsa vero reiciendis at soluta accusamus! Ad reprehenderit laudantium a.
+section#client
+  h1.oc Our clients
+  .clients
+    .cliit
+      img(src='../static/logo1.jpg' alt='y')
+    .cliit
+      img(src='../static/logo2.jpg' alt='y')
+    .cliit
+      img(src='../static/logo3.jpg' alt='y')
+    .cliit
+      img(src='../static/logo4.jpg' alt='y')
+section#contact
+  h1.conta Contact Us
+  #contacts
+    form(action='backend.php')
+      .formgr
+        label(for='name') Name
+        input#name(type='text' name='name' placeholder='enter your name')
+      .formgr
+        label(for='email') Email
+        input#email(type='text' name='name' placeholder='enter your emailid')
+      .formgr
+        label(for='contact') Contact
+        input#contact(type='number' name='name' placeholder='enter your number')
+      .formgr
+        label(for='feed') Feedback
+        br
+        textarea#feed(name='feed' cols='30' rows='10')
+footer
+  .foot
+    | Copyright &copy; www.FoodDeliverywe.com
+
